@@ -1,5 +1,5 @@
 // Variaveis
-const apiKey = process.env.NEXT_PUBLIC_OPEN_WEATHER_API_KEY;
+const apiKey = "";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
 // Seleção de Elementos
@@ -26,9 +26,9 @@ const loader = document.querySelector("#loader");
 // Funções
 // acessa os dados da api
 const getWeatherData = async (city) => {
-   
+
     toggleLoader();
- 
+
     const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`;
     const res = await fetch(apiWeatherURL);
     const data = await res.json();
