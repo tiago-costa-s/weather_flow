@@ -1,6 +1,5 @@
 // Variaveis
-const apiKey = "baf71068a1247c5aa6e51de7b31e1208";
-const apiCountryURL = "";
+const apiKey = "";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
 // Seleção de Elementos
