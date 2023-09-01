@@ -1,5 +1,5 @@
 // Variaveis
-const apiKey = process.env.NEXT_PUBLIC_OPEN_WEATHER_API_KEY;
+const apiKey = process.env.local.NEXT_PUBLIC_OPEN_WEATHER_API_KEY;
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
 // Seleção de Elementos
