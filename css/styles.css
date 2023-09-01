@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(182, 202, 224);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem;
+    background-color: rgb(249, 252, 252);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form {  
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-container {
+    flex: 1;
+
+}
+
+#logo {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: .7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-control-input {
+    display: flex;
+    width: 100%;
+}
+
+.form-control-input input {
+    flex: 1;
+    padding: .7rem;
+    background-color: transparent;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    outline: 0;
+}
+
+.form-control-input button {
+    flex: 2;
+    max-width: 40px;
+    padding: .7rem;
+    background-color: transparent;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 10px;
+    margin-left: .3rem;
+    transition: .5s;
+}
+
+.form-control-input button:hover {    
+    background-color: rgb(243, 243, 243);     
+}
+
+/* Dados do clima */
+#weather-data {
+    /* font-weight: normal; */
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#city {
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+
+#temperature-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#temperature {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+/* Descrição do clima */
+#description {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+/* Temperatura Min e Max */
+#tempMinMax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+#tempMinMax p {
+    font-size: .8rem;
+    color: rgb(190, 188, 188);
+}
+
+#thermal-sensation {
+    font-size: .8rem;
+    color: rgb(190, 188, 188);
+    margin-bottom: 1.5rem;
+}
+
+/* Detalhes do clima */
+#details-container {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.item-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-detail {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+#error-message {
+    text-align: center;
+}
+
+#error-message p {
+    text-align: center;
+    font-size: .8rem;
+    color: rgb(24, 128, 247);
+}
+
+
+#loader i {
+    font-size: 1.2rem;
+    color: rgb(156, 156, 156);
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+
+    position: absolute;
+    text-align: center;
+}
+
+footer a {
+    font-size: 7px;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(146, 146, 146);
+}
