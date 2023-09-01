@@ -1,5 +1,5 @@
 // Variaveis
-const apiKey = process.env.OPEN_WEATHER_API_KEY;
+const apiKey = process.env.API_KEY;
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 // Seleção de Elementos
 const weatherDataContainer = document.querySelector("#weather-data");
